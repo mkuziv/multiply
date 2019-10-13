@@ -4,8 +4,8 @@ module.exports = function multiply(num1, num2) {
   num2 = num2.split('').reverse();
   let result = [];
 
-  for (var i = 0; num1[i] >= 0; i++) {
-    for (var j = 0; num2[j] >= 0; j++) {
+  for (let i = 0; num1[i] >= 0; i++) {
+    for (let j = 0; num2[j] >= 0; j++) {
       if (!result[i + j]) {
         result[i + j] = 0;
       }
@@ -14,7 +14,7 @@ module.exports = function multiply(num1, num2) {
     }
   }
 
-  for (var i = 0; result[i] >= 0; i++) {
+  for (let i = 0; result[i] >= 0; i++) {
     if (result[i] >= 10) {
       if (!result[i + 1]) {
         result[i + 1] = 0;
